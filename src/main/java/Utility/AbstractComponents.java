@@ -24,7 +24,7 @@ public class AbstractComponents {
         //PageFactory.initElements(driver,this);
          this.wait= new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-
+//new line
 
     public void explicitWait(By FindBy){
 
