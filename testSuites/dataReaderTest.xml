@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods">
+    <listeners>
+        <listener class-name="FrameworkTests.TestComponents.Listners"></listener>
+    </listeners>
+    <groups>
+        <run>
+            <include name="daraReader"/>
+        </run>
+    </groups>
+    <test verbose="2" preserve-order="true" name="submitting order" thread-count="5">
+        <classes>
+
+            <class name="FrameworkTests.TestComponents.StandAloneTestReusable">
+
+
+            </class>
+
+        </classes>
+    </test>
+    <test name="error Validation">
+        <classes>
+            <class name="FrameworkTests.TestComponents.LoginErrorMessage"></class>
+        </classes>
+    </test>
+</suite>
